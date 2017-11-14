@@ -1,5 +1,14 @@
-A jQuery plugin for creating pretty, dynamic quizzes.
 
+## Your Challenge
+Create a classic video game quiz to test your gaming knowledge.
+
+#### Get Started
+* Checkout this repo and create a branch called "MonicaCodeChallenge".
+* There is a Javascript error you will need to fix before you get started.
+* Once you get the Javascript error fixed, run through the quiz to get a feel for how it works.
+* Open up the included PSD and style the quiz to match the PSD as close as you can. There are layers for different sections of the quiz.
+* For bonus points you can add a back button, make the questions random and (or) score as a percentage.
+* For questions or if you get stuck, email Ryan <rclayton@affinipay.com>
 
 ## Demo And Usage
 
@@ -192,4 +201,3 @@ Standard HTML elements like images, videos embeds, headers, paragraphs, etc., ca
 
 
 Created by [Julie Cameron](http://juliecameron.com) while previously employed at [Quicken Loans](http://quickenloans.com), Detroit, MI
-# My project's README
