@@ -8,6 +8,9 @@ Create a classic video game quiz to test your gaming knowledge.
 * Once you get the Javascript error fixed, run through the quiz to get a feel for how it works.
 * Open up the included PSD and style the quiz to match the PSD as close as you can. There are layers for different sections of the quiz.
 * For bonus points you can add a back button, make the questions random and (or) score as a percentage.
+* When you are finished, push your changes back up to the master branch.
+* You will have 7 days to finish the project - Due date: 11-21-17
+* Good Luck!
 * For questions or if you get stuck, email Ryan <rclayton@affinipay.com>
 
 ## Demo And Usage
