@@ -83,6 +83,10 @@ input[type='checkbox'] { transform: scale(1.4); }
     text-align: center;
 }
 
+.backToQuestion {
+    margin-right: 2em;
+}
+
 .tryAgainWrapper {
     text-align:center;
     margin-top: 40px;
