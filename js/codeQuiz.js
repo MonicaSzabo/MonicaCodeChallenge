@@ -21,7 +21,7 @@
                 nextQuestionText: 'Next &raquo;',
                 backButtonText: '',
                 completeQuizText: '',
-                tryAgainText: '',
+                tryAgainText: 'Play Again',
                 questionCountText: 'Question %current of %total',
                 preventUnansweredText: 'You must select at least one answer.',
                 questionTemplateText:  '%count. %text',
@@ -211,7 +211,7 @@
 
                 // add retry button to results view, if enabled
                 if (plugin.config.tryAgainText && plugin.config.tryAgainText !== '') {
-                    $quizResultsCopy.append('<p><a class="button ' + tryAgainClass + '" href="#">' + plugin.config.tryAgainText + '</a></p>');
+                    $quizResultsCopy.append('<p class="tryAgainWrapper"><a class="button ' + tryAgainClass + '" href="#">' + plugin.config.tryAgainText + '</a></p>');
                 }
 
                 // Setup questions
@@ -225,14 +225,6 @@
 
                         var questionHTML = $('<li class="' + questionClass +'" id="question' + (count - 1) + '"></li>');
 
-                        if (plugin.config.displayQuestionCount) {
-                            questionHTML.append('<div class="' + questionCountClass + '">' +
-                                plugin.config.questionCountText
-                                    .replace('%current', '<span class="current">' + count + '</span>')
-                                    .replace('%total', '<span class="total">' +
-                                        questionCount + '</span>') + '</div>');
-                        }
-
                         var formatQuestion = '';
                         if (plugin.config.displayQuestionNumber) {
                             formatQuestion = plugin.config.questionTemplateText
@@ -241,6 +233,14 @@
                             formatQuestion = question.q;
                         }
                         questionHTML.append('<h3>' + formatQuestion + '</h3>');
+
+                        if (plugin.config.displayQuestionCount) {
+                            questionHTML.append('<div class="' + questionCountClass + '">' +
+                                plugin.config.questionCountText
+                                    .replace('%current', '<span class="current">' + count + '</span>')
+                                    .replace('%total', '<span class="total">' +
+                                        questionCount + '</span>') + '</div>');
+                        }
 
                         // Count the number of true values
                         var truths = 0;
@@ -352,6 +352,8 @@
                 kN = keyNotch; // you specify the notch, you get a callback function for your animation
 
                 function start(options) {
+                    $quizName.hide();
+                    $quizHeader.hide();
                     var firstQuestion = $(_element + ' ' + _questions + ' li').first();
                     if (firstQuestion.length) {
                         firstQuestion.fadeIn(500, function () {

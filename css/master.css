@@ -2,17 +2,17 @@
 /* Styles to prettify the quiz page */
 
 html {
-    background: #eee;
+    background-image: url("../img/code-challenge-background.jpg");
+    /*background: #eee;*/
 }
 
 body {
-    width: 800px;
+    width: 50%;
     margin: 0 auto;
-    border: 2px solid #ccc;
-    border-top: none;
-    background: #fff;
-    padding: 20px;
-    font-family: Trebuchet, Arial,Helvetica,sans-serif;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10em;
+    margin-top: 2em;
+    font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     color: #353535;
     line-height: 1.5em;
@@ -23,15 +23,16 @@ h1,h2,h3,h4,h5,h6 {font-weight: bold;}
 h1 {
     font-size: 26px;
     margin: 0 0 20px;
-    color: #0C4569;
+    color: #000;
 }
 h2 {
     font-size: 22px;
     margin: 15px 0;
 }
 h3 {
-    font-size: 18px;
-    margin: 15px 0 10px;
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 10px 0;
 }
 h4 {
     font-size: 16px;
@@ -51,24 +52,39 @@ em { font-style: italic; }
 ul { list-style-type: circle; }
 ol { list-style-type: decimal; }
 ol li { list-style-type: decimal; margin-left: 20px; }
+input[type='radio'] { transform: scale(1.4); }
+input[type='checkbox'] { transform: scale(1.4); }
+
+.buttonCenter {
+    text-align: center;
+    margin-top: 2em;
+}
 
 .button {
-    float: left;
-    width: auto;
-    padding: 5px 15px;
-    color:#ffffff;
-    background-color:darkcyan;
-    border: 1px solid #fff;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    padding: 14px 40px;
+    color: #ffffff;
+    background-color: #00A3E4;
 	text-decoration: none;
+    font-size: 16px;
 }
 .button:hover {
-    background-color:darkslategray;
+    background-color: #0680B0;
 }
 
 .startQuiz {
+    margin-top: 40px;
+}
+
+.quizName {
+    text-align: center;
+}
+
+.quizDescription {
+    text-align: center;
+}
+
+.tryAgainWrapper {
+    text-align:center;
     margin-top: 40px;
 }
 
@@ -94,7 +110,7 @@ ol li { list-style-type: decimal; margin-left: 20px; }
 
 .questionCount {
     font-size: 14px;
-    font-style: italic;
+    color: #fff;
 }
 .questionCount span {
     font-weight: bold;
@@ -106,15 +122,15 @@ ol.questions {
 }
 ol.questions li {
     margin-left: 0;
+    font-size: 20px;
 }
 
 ul.answers {
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 ul.responses li {
-    margin: 10px 20px 20px;
+    margin: 30px 0;
 }
 ul.responses li p span {
     display: block;
@@ -122,14 +138,19 @@ ul.responses li p span {
     font-size: 18px;
 }
 .complete ul.answers li.correct, ul.responses li.correct p span {
-    color: #6C9F2E;
+    color: #2FB3E6;
 }
 ul.responses li.incorrect p span {
-    color: #B5121B;
+    color: #E62F4D;
+}
+
+.quizScore {
+    text-align: center;
 }
 
 .quizResults h3 {
     margin: 0;
+    text-align: center;
 }
 .quizResults h3 span {
     font-weight: normal;
