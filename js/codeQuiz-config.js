@@ -11,17 +11,17 @@ var quizJSON = {
         "level2":  "Gaming Contender",
         "level3":  "Gaming Amateur",
         "level4":  "Gaming Newb",
-        "level5":  "Stay in school, kid..." // no comma here
+        "level5":  "Play more games, kid..." // no comma here
     },
     "questions": [
         { // Question 1 - Multiple Choice, Single True Answer
             "q": "Which one of these games was given away with the purchase of the original Game Boy console?",
             "a": [
                 {"option": "Final Fantasy Legend",       "correct": false},
-                {"option": "Zelda Link's Awakening",     "correct": false},
+                {"option": "Zelda Link's Awakening",     "correct": true},
                 {"option": "Pokemon",                    "correct": false},
                 {"option": "Kirby's Dream Land",         "correct": false},
-                {"option": "Super Mario Land",           "correct": true}// no comma here
+                {"option": "Super Mario Land",           "correct": false}// no comma here
             ],
             "correct": "<p><span>NICE!</span></p>",
             "incorrect": "<p><span>OOPS!</span></p>" // no comma here
