@@ -691,7 +691,7 @@
 
                 if (!this.disabled && !$(this).hasClass('disabled')) {
                     plugin.method.startQuiz.apply (null, [{callback: plugin.config.animationCallbacks.startQuiz}]);
-                //}
+                }
             });
 
             // Bind "try again" button
