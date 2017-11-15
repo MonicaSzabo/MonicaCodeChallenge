@@ -3,6 +3,7 @@
 
 html {
     background-image: url("../img/code-challenge-background.jpg");
+    height: 100%;
     /*background: #eee;*/
 }
 
@@ -10,12 +11,13 @@ body {
     width: 50%;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.7);
-    padding: 10em;
+    padding: 10% 16% 14%;
     margin-top: 2em;
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     color: #353535;
     line-height: 1.5em;
+    min-height: 40%;
 }
 
 h1,h2,h3,h4,h5,h6 {font-weight: bold;}
@@ -84,7 +86,7 @@ input[type='checkbox'] { transform: scale(1.4); }
 }
 
 .backToQuestion {
-    margin-right: 2em;
+    right: 29em;
 }
 
 .tryAgainWrapper {
@@ -128,6 +130,11 @@ ol.questions li {
     margin-left: 0;
     font-size: 20px;
 }
+ol.questions a {
+    margin-right: 10px;
+    position: absolute;
+    bottom: 10em;
+}
 
 ul.answers {
     margin-bottom: 40px;
@@ -163,4 +170,19 @@ ul.responses li.incorrect p span {
 .quizResultsCopy {
     clear: both;
     margin-top: 20px;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 500px) {
+    body {
+        min-height: 50%;
+    }
+
+    ol.questions a {
+        bottom: 23em;
+    }
+
+    .backToQuestion {
+        right: 2em;
+    }
 }
